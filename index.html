@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Boris Radulov - Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <h1>
+                <a href="index.html">Boris Radulov</a>
+            </h1>
+        </div>
+        <div id="navbar">
+            <table>
+                <tbody>
+                    <tr>
+                        <td onclick="location.href='travel.html';"><a href="travel.html"> Travel </a></td>
+                        <td onclick="location.href='recipes.html';"><a href="recipes.html"> Recipes </a></td>
+                        <td onclick="location.href='blog.html';"><a href="blog.html"> Blog </a></td>
+                        <td onclick="location.href='event.html';"><a href="event.html"> Event </a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="maincontent">
+            <h1> Welcome to Boris's Realm.</h1>
+            <img id="portrait" src="images/me.png" alt="Profile picture.">
+            <p> I'm a senior at the <a href="https://acs.bg">American College of Sofia</a>, section 12/3. I'm 18 years
+                old. I'm highly interested in informatics and physics, the latter being my high school specializaion.
+                <br><br>
+                This year, in my Informatics class, I learned about basic HTML and CSS. There wasn't a lot of material
+                that I didn't know already but I found the review relatively useful. I think the course has been pretty
+                useful to people with no previous experience. You can look at what I've created in this course on this
+                portfolio.
+                <br><br>
+                For my future goals, I'd like to work on more projects such as the website for <a
+                    href="https://fission.acs.bg">ACS FISSION</a>. I also want to learn about serverless and other
+                emerging web architectures. I'm pretty bad at JavaScript, so that's something I really have to work on.
+                <br><br>
+                For more of my work, please check out my GitHub: <a href="https://github.com/BobbyRaduloff">@BobbyRaduloff</a>.
+            </p>
+        </div>
+        <div id="footer">
+            © Boris Radulov 2020
+        </div>
+    </div>
+
+    <!-- For Clippy -->
+    <script src="https://unpkg.com/jquery@3.2.1"></script>
+    <script src="https://unpkg.com/clippyjs@latest"></script>
+    <script type="text/javascript">
+        clippy.load('Clippy', (agent) => {
+            agent.moveTo($(window).width() * 0.8, $(window).height() * 0.8);
+            agent.show();
+            agent.speak("Welcome to Boris Radulov's weird, 90's inspired portfolio.")
+            setInterval(() => {
+                agent.animate();
+            }, 30000);
+        });
+    </script>
+</body>
+
+</html>

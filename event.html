@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Boris Radulov - Event Invite </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+    <style type="text/css">
+
+        #maincontent #title {
+            text-align: center;
+        }
+
+        #maincontent #subtitle {
+            font-style: italic;
+            text-align: center;
+        }
+
+        #maincontent #title-separator {
+            width: 80%;
+        }
+
+        #maincontent img {
+            width: 40%;
+            float: left;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <h1>
+                <a href="index.html">Boris Radulov</a>
+            </h1>
+        </div>
+        <div id="navbar">
+            <table>
+                <tbody>
+                    <tr>
+                        <td onclick="location.href='travel.html';"><a href="travel.html"> Travel </a></td>
+                        <td onclick="location.href='recipes.html';"><a href="recipes.html"> Recipes </a></td>
+                        <td onclick="location.href='blog.html';"><a href="blog.html"> Blog </a></td>
+                        <td onclick="location.href='event.html';"><a href="event.html"> Event </a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="maincontent">
+            <div id="page">
+                <div id="event_content">
+                    <h1 id="title" class="text"> 20s Dance Night </h1>
+                    <h2 id="subtitle" class="text"> Personal Invite </h2>
+                    <hr id="title-separator">
+                    <h3 class="text"> Where/When/Etc? </h3>
+                    <img src="images/event.jpg">
+                    <p class="text">
+                        The dance night will be on the 23th of December.
+                        <br>
+                        It will be held in the 20s themed piano bar, Jazz Soulful.
+                        <br>
+                        The event will feature live music from a Duke Ellington Tribute Band called the Dukes.
+                        <br>
+                        Dressing in 20s attire is highly recommended.
+                    </p>
+                    <h3 class="text"> How to RSVP? </h3>
+                    <p class="text"> This invite is a +1 invite. Please RSVP at <a class="text" herf="mailto:rsvp@jazz.com">rsvp@jazz.com</a>. </p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            © Boris Radulov 2020
+        </div>
+    </div>
+
+    <!-- For Clippy -->
+    <script src="https://unpkg.com/jquery@3.2.1"></script>
+    <script src="https://unpkg.com/clippyjs@latest"></script>
+    <script type="text/javascript">
+        clippy.load('Clippy', (agent) => {
+            agent.moveTo($(window).width() * 0.8, $(window).height() * 0.8);
+            agent.show();
+            agent.speak("Welcome to Boris Radulov's weird, 90's inspired event invite.")
+            setInterval(() => {
+                agent.animate();
+            }, 30000);
+        });
+    </script>
+</body>
+
+</html>

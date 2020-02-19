@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Boris Radulov - Travel </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+    <style type="text/css">
+        #maincontent img {
+            display: block;
+            margin: auto;
+            width: 600px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <h1>
+                <a href="index.html">Boris Radulov</a>
+            </h1>
+        </div>
+        <div id="navbar">
+            <table>
+                <tbody>
+                    <tr>
+                        <td onclick="location.href='travel.html';"><a href="travel.html"> Travel </a></td>
+                        <td onclick="location.href='recipes.html';"><a href="recipes.html"> Recipes </a></td>
+                        <td onclick="location.href='blog.html';"><a href="blog.html"> Blog </a></td>
+                        <td onclick="location.href='event.html';"><a href="event.html"> Event </a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="maincontent">
+            <h1> Travel to Hong Kong </h1>
+            <hr>
+            <h2> Why visit? </h2>
+            <p> Hong Kong is a beautiful mix of Chinese and Western European culture. Visiting will allow you to experience the best of both cultures. </p>
+            <h2> What to see? </h2>
+            <ul>
+                <li id="kowloon"> Kowloon Walled City Park </li>
+                <li> Temple Street Night Market </li>
+                <li> Man Mo Temple </li>
+                <li> Golden Bauhinia Square </li>
+            </ul>
+            <h2> Coolest people from Hong Kong </h2>
+            <ol>
+                <li> Jackie Chan </li>
+                <li> Denise Ho </li>
+                <li> Tony Leung </li>
+            </ol>
+            <h2> Protests </h2>
+            <p> Hong Kong is currently experiencing a wave of political protests. This should not be a problem as long as you stay away from the most crowded urban centers and follow the orders of police. </p>
+            <h2> Images of Hong Kong </h2>
+            <img class="hkimg" src="images/hk_skyline.jpg">
+            <img class="hkimg" src="images/hk_park.jpg">
+            <img class="hkimg" src="images/hk_street.jpg">
+        </div>
+        <div id="footer">
+            © Boris Radulov 2020
+        </div>
+    </div>
+
+    <!-- For Clippy -->
+    <script src="https://unpkg.com/jquery@3.2.1"></script>
+    <script src="https://unpkg.com/clippyjs@latest"></script>
+    <script type="text/javascript">
+        clippy.load('Clippy', (agent) => {
+            agent.moveTo($(window).width() * 0.8, $(window).height() * 0.8);
+            agent.show();
+            agent.speak("Welcome to Boris Radulov's weird, 90's inspired travel webpage.")
+            setInterval(() => {
+                agent.animate();
+            }, 30000);
+        });
+    </script>
+</body>
+
+</html>

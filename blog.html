@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Boris Radulov - Blog </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://gitcdn.xyz/repo/pi0/clippyjs/master/assets/clippy.css">
+    <style type="text/css">
+        #maincontent .something {
+            font-style: italic;
+        }
+        #maincontent h3 {
+            background-color: yellow;
+            font-family: "Times New Roman";
+        }
+        #maincontent h1 {
+            font-size: 3em;
+        }
+        #maincontent h6 {
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <div id="header">
+            <h1>
+                <a href="index.html">Boris Radulov</a>
+            </h1>
+        </div>
+        <div id="navbar">
+            <table>
+                <tbody>
+                    <tr>
+                        <td onclick="location.href='travel.html';"><a href="travel.html"> Travel </a></td>
+                        <td onclick="location.href='recipes.html';"><a href="recipes.html"> Recipes </a></td>
+                        <td onclick="location.href='blog.html';"><a href="blog.html"> Blog </a></td>
+                        <td onclick="location.href='event.html';"><a href="event.html"> Event </a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="maincontent">
+            <h1>Boris Radulov's blog</h1>
+
+            <h3>Contents</h3>
+            <ul>
+                <li><a href="#first">First post!</a></li>
+                <li><a href="#second">Second post!</a></li>
+            </ul>
+            
+            <h2 id="first">First post!</h2>
+            <h6>Posted on November 11, 2019.</h6>
+            <p>I started my own blog and I ate lasagna. </p>
+            <p class="something">Something somehing something.</p>
+
+            <h2 id="second">Second post!</h2>
+            <h6>Posted on November 12, 2019.</h6>
+            <p>I played snooker and I ate some moe lasagna.</p>
+            <p class="something">Something somehing something.</p>
+        </div>
+        <div id="footer">
+            © Boris Radulov 2020
+        </div>
+    </div>
+
+    <!-- For Clippy -->
+    <script src="https://unpkg.com/jquery@3.2.1"></script>
+    <script src="https://unpkg.com/clippyjs@latest"></script>
+    <script type="text/javascript">
+        clippy.load('Clippy', (agent) => {
+            agent.moveTo($(window).width() * 0.8, $(window).height() * 0.8);
+            agent.show();
+            agent.speak("Welcome to Boris Radulov's weird, 90's inspired blog.")
+            setInterval(() => {
+                agent.animate();
+            }, 30000);
+        });
+    </script>
+</body>
+
+</html>
